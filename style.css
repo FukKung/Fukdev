@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #a8a8a8;
   font-size: 24px; /* เพิ่มขนาดตัวอักษรทั่วไป */
 }
 
@@ -40,4 +40,18 @@ h1 {
 p {
   font-size: 2em; /* ขนาดข้อความใหญ่มาก */
   line-height: 1.6;
+}
+/* ... (CSS เดิม) ... */
+
+.watermark {
+  position: absolute;
+  bottom: 5px; /* ชิดขอบล่างมากขึ้น */
+  left: 5px;   /* ชิดขอบซ้ายมากขึ้น */
+  font-size: 2em; /* ปรับขนาดตัวอักษรให้เล็กลง */
+  color: rgba(0, 0, 0, 0.3); /* สีอ่อนลง */
+  font-family: monospace; /* ใช้ฟอนต์แบบ monospace ให้ดูเป็นเครดิต */
+}
+.scrollable-container {
+  height: 200px; /* กำหนดความสูงของ container */
+  overflow-y: auto; /* เปิดใช้งานการเลื่อนในแนวดิ่ง */
 }
