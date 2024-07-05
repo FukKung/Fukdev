@@ -64,3 +64,21 @@ p {
 .tea {
  font-size: 2em;
 }
+/* ... (CSS เดิม) ... */
+
+.myButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4CAF50; 
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.myButton:hover {
+  background-color: #45a049; 
+}
