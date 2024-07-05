@@ -1,3 +1,4 @@
+/* การจัดการพื้นฐาน (Basic Styling) */
 body {
   font-family: sans-serif;
   display: flex;
@@ -5,25 +6,27 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #a8a8a8;
-  font-size: 24px; /* เพิ่มขนาดตัวอักษรทั่วไป */
+  font-size: 24px;
 }
 
+/* Card Styles */
 .card {
   background-color: white;
-  padding: 60px; /* เพิ่มระยะห่างภายใน */
-  border-radius: 20px; /* ขอบมนมากขึ้น */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้น */
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 80%; /* ปรับขนาด card ให้เต็มหน้าจอมากขึ้น */
-  max-width: 600px; /* จำกัดขนาดสูงสุด */
+  width: 80%;
+  max-width: 600px;
 }
 
+/* Image Container Styles */
 .image-container {
-  width: 300px; /* เพิ่มขนาดรูปภาพ */
+  width: 300px;
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 40px; /* ระยะห่างจากข้อความ */
+  margin: 0 auto 40px;
 }
 
 .image-container img {
@@ -32,26 +35,32 @@ body {
   object-fit: cover;
 }
 
+/* Text Styles */
 h1 {
-  font-size: 4em; /* ขนาดหัวเรื่องใหญ่มาก */
+  font-size: 4em;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 2em; /* ขนาดข้อความใหญ่มาก */
+  font-size: 2em;
   line-height: 1.6;
 }
-/* ... (CSS เดิม) ... */
 
+/* Watermark Styles */
 .watermark {
   position: absolute;
-  bottom: 5px; /* ชิดขอบล่างมากขึ้น */
-  left: 5px;   /* ชิดขอบซ้ายมากขึ้น */
-  font-size: 2em; /* ปรับขนาดตัวอักษรให้เล็กลง */
-  color: rgba(0, 0, 0, 0.3); /* สีอ่อนลง */
-  font-family: monospace; /* ใช้ฟอนต์แบบ monospace ให้ดูเป็นเครดิต */
+  bottom: 5px;
+  left: 5px;
+  font-size: 3em; 
+  color: rgba(0, 0, 0, 0.3);
+  font-family: monospace;
 }
+
+/* Scrollable Container Styles (ถ้ายังต้องการใช้) */
 .scrollable-container {
-  height: 200px; /* กำหนดความสูงของ container */
-  overflow-y: auto; /* เปิดใช้งานการเลื่อนในแนวดิ่ง */
+  height: 200px;
+  overflow-y: auto;
+}
+.tea {
+ font-size: 2em;
 }
