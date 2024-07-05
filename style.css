@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 160vh;
+    min-height: 180vh;
     background-color: #a8a8a8;
     font-size: 32px; /* เพิ่มขนาดตัวอักษรฐาน */
     flex-direction: column;
@@ -143,16 +143,6 @@ p {
     font-size: 2em; /* เพิ่มขนาด */
     margin-top: 20px;
     color: #333;
-    animation: bounceText 1s ease infinite; /* เพิ่ม animation ให้ข้อความเด้ง */
-}
-
-@keyframes bounceText { /* กำหนด animation สำหรับข้อความเด้ง */
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); 
-    }
 }
 
 /* Content styles */
