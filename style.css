@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-size: 24px; /* เพิ่มขนาดตัวอักษรทั่วไป */
+}
+
+.card {
+  background-color: white;
+  padding: 60px; /* เพิ่มระยะห่างภายใน */
+  border-radius: 20px; /* ขอบมนมากขึ้น */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้น */
+  text-align: center;
+  width: 80%; /* ปรับขนาด card ให้เต็มหน้าจอมากขึ้น */
+  max-width: 600px; /* จำกัดขนาดสูงสุด */
+}
+
+.image-container {
+  width: 300px; /* เพิ่มขนาดรูปภาพ */
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 40px; /* ระยะห่างจากข้อความ */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 4em; /* ขนาดหัวเรื่องใหญ่มาก */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 2em; /* ขนาดข้อความใหญ่มาก */
+  line-height: 1.6;
+}
