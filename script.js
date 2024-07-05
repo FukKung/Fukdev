@@ -1,27 +1,31 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ฟังก์ชันสำหรับแสดงเนื้อหาหลังจากเวลาที่กำหนด
-    function showContent() {
-        const loader = document.getElementById('loader');
-        const content = document.getElementById('content');
+  const loadingText = document.querySelector('.loading-text');
+  const textToType = "กำลังโหลด ใจเย็นๆ ครับ";
+  let charIndex = 0;
 
-        loader.style.opacity = 0; // ทำให้ Loader จางหายไป
-        setTimeout(() => {
-            loader.style.display = 'none'; // ซ่อน Loader
-            content.style.display = 'block'; // แสดงเนื้อหา
-        }, 500); // รอ 0.5 วินาทีเพื่อให้ animation จางหายเสร็จ
-    }
+  function typeWriter() {
+      if (charIndex < textToType.length) {
+          loadingText.textContent += textToType.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, 100); // ปรับความเร็วการพิมพ์ได้ที่นี่
+      }
+  }
 
-    // ตรวจสอบว่า browser รองรับ animation
-    const supportsAnimation = document.body.style.animation !== undefined;
+  function showContent() {
+      const loader = document.getElementById('loader');
+      const content = document.getElementById('content');
+      loader.style.opacity = 0;
+      setTimeout(() => {
+          loader.style.display = 'none';
+          content.style.display = 'block';
+      }, 500);
+  }
 
-    if (supportsAnimation) {
-        // ถ้ารองรับ animation ให้ใช้ setTimeout เพื่อหน่วงเวลา
-        setTimeout(showContent, 4000); // 4 วินาที
-    } else {
-        // ถ้าไม่รองรับ animation ให้แสดงเนื้อหาทันที
-        showContent();
-    }
+  // เริ่มพิมพ์ข้อความและแสดงเนื้อหาหลังจากพิมพ์เสร็จ
+  typeWriter();
+  setTimeout(showContent, (textToType.length + 1) * 100);
 });
+
 
 
 
