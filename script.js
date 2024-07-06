@@ -34,4 +34,14 @@ const button = document.querySelector('.button');
 button.addEventListener('click', () => {
   // เพิ่มโค้ดสำหรับการทำงานเมื่อคลิกปุ่มที่นี่
 });
+function sendMessage() {
+    const userInput = document.getElementById("userInput");
+    const response = document.getElementById("response");
 
+    if (userInput.value.trim() === "ฟลุ๊ค") {
+        response.textContent = "ถูกต้องแล้วครับ!";
+    } else {
+        response.textContent = "ไม่ใช่โว้ยยย!!";
+    }
+    userInput.value = ""; // ล้างช่อง input หลังจากส่งข้อความ
+}
