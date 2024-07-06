@@ -149,3 +149,44 @@ p {
 #content {
     display: none; /* ซ่อนเนื้อหาตอนแรก */
 }
+/* CSS เดิมของคุณ */
+/* ... */
+
+/* CSS ของกล่องข้อความ */
+/* CSS เดิมของคุณ */
+/* ... */
+
+/* CSS ของกล่องข้อความ */
+#messageBox {
+    width: 600px; /* ขยายความกว้าง */
+    padding: 50px; /* เพิ่ม padding */
+    margin: 30px auto; /* จัดกึ่งกลางแนวนอน */
+    text-align: center; /* จัดข้อความภายในให้กึ่งกลาง */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 10px; /* เพิ่มความโค้งมน */
+}
+
+#userInput {
+    width: calc(100% - 140px); /* ปรับขนาดให้พอดีกับปุ่ม */
+    padding: 25px; /* เพิ่ม padding */
+    margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่าง */
+    box-sizing: border-box; 
+    font-size: 22px; /* เพิ่มขนาดตัวอักษร */
+    border-radius: 5px; /* เพิ่มความโค้งมน */
+}
+
+#response {
+    font-weight: bold;
+    font-size: 28px; /* เพิ่มขนาดตัวอักษร */
+}
+
+#messageBox button {
+    width: 130px; /* เพิ่มความกว้าง */
+    padding: 25px; /* เพิ่ม padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* เพิ่มขนาดตัวอักษร */
+    border-radius: 5px; /* เพิ่มความโค้งมน */
+}
