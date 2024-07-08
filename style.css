@@ -96,17 +96,7 @@ p {
     max-width: 150px; /* เพิ่มขนาดรูป */
     margin-right: 20px;
 }
-.containertwo {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 20px; /* เพิ่ม padding */
-    max-width: 500px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+
 /* Keyframes for bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
